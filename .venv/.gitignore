@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+.env
+
+# VSCode / PyCharm / JetBrains
+.idea/
+.vscode/
+
+# Output files
+*.png
+*.jpg
+*.jpeg
+*.log
+*.csv
+
+# System
+.DS_Store
+Thumbs.db
+
+# Other
+*.sqlite3
