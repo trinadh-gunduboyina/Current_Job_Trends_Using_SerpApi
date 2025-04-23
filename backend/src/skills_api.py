@@ -1,7 +1,7 @@
 import os
 import re
 import requests
-from collections import Counter, defaultdict
+from collections import Counter
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from dotenv import load_dotenv
@@ -73,7 +73,6 @@ def fetch_and_process_jobs(query):
 
     return dict(skill_counts.most_common(50))
 
-
 # 🔗 API Endpoint
 @app.route("/api/skills")
 def get_skills():
@@ -83,7 +82,6 @@ def get_skills():
         return jsonify(skills_data)
     except Exception as e:
         return jsonify({"error": str(e)}), 500
-
 
 # 🏁 Run
 if __name__ == "__main__":
