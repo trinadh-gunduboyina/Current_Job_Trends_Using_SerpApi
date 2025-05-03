@@ -13,3 +13,12 @@ python-dateutil==2.9.0.post0
 python-dotenv==1.0.1
 six==1.17.0
 zipp==3.20.2
+Flask
+flask-cors
+python-dotenv
+requests
+pandas
+matplotlib
+numpy
+gunicorn==21.2.0
+
